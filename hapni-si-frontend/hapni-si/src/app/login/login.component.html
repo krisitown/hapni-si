@@ -1,0 +1,25 @@
+<div class="w3_login">
+    <h3>ВХОД</h3>
+    <div class="w3_login_module">
+        <div class="">
+          <div class="form">
+            <h2>Влезте във вашия профил</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input [(ngModel)]="email" type="text" name="Username" placeholder="Email" required=" ">
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]="password" type="password" name="Password" placeholder="Парола" required=" ">
+                </div>
+
+                <div class="form-group">
+                    <input (click)="login()" type="button" value="Вход">
+                </div>
+            </form>
+          </div>
+
+          <div class="cta"><a>Забравена парола?</a></div>
+        </div>
+    </div>
+</div>

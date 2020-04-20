@@ -1,0 +1,22 @@
+<div class="logo_products">
+    <div class="container">
+        <div class="w3ls_logo_products_left">
+            <img class="img-responsive" src="assets/images/logo.png" style="width: 50%; height: 50%;">
+        </div>
+        <div class="w3ls_logo_products_left1">
+            <ul class="special_items">
+                <li><a href="/">Начало</a><i>/</i></li>
+                <li><a href="/offers">Предложения</a><i>/</i></li>
+                <li *ngIf="loggedIn"><a href="/create-offer">Направи дарение!</a><i>/</i></li>
+                <li *ngIf="!loggedIn"><a href="/register">Регистрация</a><i>/</i></li>
+                <li *ngIf="!loggedIn"><a href="/login">Вход</a><i>/</i></li>
+                <li *ngIf="loggedIn"><a href="/logout">Излезте от акаунта</a><i>/</i></li>
+                <li><a href="/about">За нас</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <div *ngFor="let message of messages" stlye="margin-top: 15px; margin-bottom: 15px">
+        <div class="alert alert-{{message.status}}">{{message.message}}</div>
+    </div>
+</div>

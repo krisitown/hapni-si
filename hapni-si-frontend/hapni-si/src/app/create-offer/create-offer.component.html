@@ -1,0 +1,31 @@
+<div class="w3_login">
+    <h3>НОВО ДАРЕНИЕ</h3>
+    <div class="w3_login_module">
+        <div class="">
+          <div class="form">
+            <h2>Създайте ново дарение:</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input [(ngModel)]="post.title" type="text" name="title" placeholder="Заглавие" required=" ">
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]="post.description" type="textarea" name="description" placeholder="Кратко описание" required=" ">
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]="post.image" type="text" name="image" placeholder="Изображение" required=" ">
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]="post.location" type="text" name="location" placeholder="Адрес/локация" required=" ">
+                </div>
+
+                <div class="form-group">
+                    <input (click)="create()" type="button" value="Създай">
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
